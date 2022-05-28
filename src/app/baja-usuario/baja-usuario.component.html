@@ -1,0 +1,33 @@
+<div id="container">
+    <br><br>
+      <h3 style="">ELIMINAR USUARIO</h3>
+      <form class="row g-3">
+          
+          <div class="col-md-4">
+            <label for="validationDefaultUsername" class="form-label">Usuario</label>
+            <div class="input-group">
+              <span class="input-group-text" id="inputGroupPrepend2">@</span>
+              <input type="text" class="form-control" id="Usuario" name="Usuario" required [(ngModel)]="usu.Usuario"/>
+            </div>
+          </div>
+          <div class="col-12">
+            <button class="btn btn-primary" type="button" (click)="consultar()">Buscar</button>
+          </div>
+          <div class="col-md-1">
+            <label for="validationDefault01" class="form-label">ID</label>
+            <input type="text" class="form-control" id="idUsuario" name="idUsuario" readonly required [(ngModel)]="usu.idUsuario"/>
+          </div>
+          <div class="col-md-4">
+            <label for="validationDefault01" class="form-label">Nombre</label>
+            <input type="text" class="form-control" id="Nombre" name="Nombre" readonly required [(ngModel)]="usu.Nombre"/>
+          </div>
+          <div class="col-md-3">
+              <label for="validationDefault02" class="form-label">Fecha de Alta</label>
+              <input type="text" class="form-control" id="FechaAlta" name="FechaAlta" readonly required [(ngModel)]="usu.FechaAlta"/>
+          </div>
+          <div class="col-12">
+            <button class="btn btn-danger" type="button" (click)="baja(usu.idUsuario)">Eliminar</button>
+          </div>
+        </form>
+  </div>
+  
